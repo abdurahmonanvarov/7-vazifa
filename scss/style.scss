@@ -1,19 +1,22 @@
 @import './header';
 @import './main';
 @import './section';
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 20px;
 }
-.continer{
+
+.continer {
     max-width: 1145px;
     width: 100%;
     margin: 0 auto;
 }
-%buttonbolim{
+
+%buttonbolim {
     border: none;
     width: 195px;
     height: 56px;
@@ -25,171 +28,266 @@
     font-weight: 700px;
     line-height: 24px;
     cursor: pointer;
-    :hover{
+
+    :hover {
         background-color: #195618;
     }
 }
-.wrapper{
+
+%greeninfo {
     width: 121px;
     height: 148px;
-    background-color: #3646D9;  
+    background-color: #3646D9;
     box-shadow: 0px 4px 31px rgba(54, 70, 217, 0.388);
     border-radius: 25px;
     padding-top: 19px;
     padding-bottom: 14px;
-    h3{
+
+    h3 {
         text-align: center;
         color: #FFFFFF;
         font-weight: 700px;
         font-size: 34px;
     }
-    h4{
+
+    h4 {
         text-align: center;
         color: #FFFFFF;
         font-weight: 700px;
         font-size: 17px;
     }
 }
-.vidious__continer{
+
+.vidious__continer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 113px;
     margin-top: 149px;
     margin-bottom: 109px;
-    .youtube_vidious{
-     width: 643px;
-     height: 483px;
-     position: relative;
-     .wrapper{
-        position: absolute;
-        top: 273px;
-        right: -50px;
-     }
-     iframe{
-     border-radius: 35px;
-     }
-    }
-    .vidious_information{
-     span{
-         color: #3EA83B;
-         font-weight: 700px;
-         font-size: 19px;
-         margin-bottom: 28px;
-     }
-     h2{
-         color: #363739;
-         font-size: 46px;
-         font-weight: 700px;
-         margin-bottom: 37px;
-     }
-     p{
-         color: #363739;
-         font-size: 16px;
-         margin-bottom: 10px;
-     }
-    }
- }
- .vidious_information #vidious_button{
-     @extend %buttonbolim
- }
-  #vidious_button:hover{
-     background-color: #277426;
-  }
-  .desc_continer{
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 86px;
-     .desc_info{
-         margin-bottom: 96px;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         gap: 20px;
-         img{
-             width: 132px;
-             height: 132px;
-         }
-         .info{
-             h3{
-                 font-size: 21px;
-                 font-weight: 700px;
-                 color: #363739;
-                 margin-bottom: 17px;
-             }
-             p{
-                 color: #363739;
-                 font-size: 16px;
-             }
-         }
-     }
- }
- .casings{
-     background-color: rgb(41, 41, 146);
-     padding-top: 116px;
-     padding-bottom: 108px;
-     .casings_continer{
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-     }
-     .casings_info{
-         width: 500px;
-         span{
-           color: #FFFFFF;
-           font-weight: 700px;
-           font-size: 19px;
-           margin-bottom: 12px;
-         }
-         h2{
-             width: 478px !important;
-             color: #FFFFFF;
-             font-size: 46px;
-             font-weight: 700px;
-             margin-bottom: 30px;
-         }
-         p{
-             font-size: 18px;
-             color: #FFFFFF;
-             margin-bottom: 64px;
-         }
-         .casings_galich{
-             display: flex;
-             align-items: center;
-             gap: 11px;
-             margin-bottom: 17px;
-             
-         }
-     }
- }
-     h5{
-         color: #FFFFFF;
-         font-weight: 700px;
-     }
-     .product_photo{
+
+    .youtube_vidious {
+        width: 643px;
+        height: 483px;
         position: relative;
-         img{
+
+        .wrapper {
+            @extend %greeninfo
+        }
+
+        .wrapper {
             position: absolute;
-         }
-         .first{
-           right: -40px;
-           top: -280px;
-         }
-         .secint{
-            right: -900px;
-            top: -430px;
-            z-index: -1px;
-         }
-         .last{
-            top: -280px;
-            right: -600px;
-            z-index: -1px;
-         }
-         .device{
-            position: absolute;
-            top: -230px;
-            right: -200px;
-            z-index: -1px;
-         }
-     }
+            top: 273px;
+            right: -50px;
+        }
+
+        iframe {
+            border-radius: 35px;
+        }
+    }
+
+    .vidious_information {
+        span {
+            color: #3EA83B;
+            font-weight: 700px;
+            font-size: 19px;
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: #363739;
+            font-size: 46px;
+            font-weight: 700px;
+            margin-bottom: 37px;
+        }
+
+        p {
+            color: #363739;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.vidious_information #vidious_button {
+    @extend %buttonbolim
+}
+
+#vidious_button:hover {
+    background-color: #277426;
+}
+
+.desc_continer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 86px;
+
+    .desc_info {
+        margin-bottom: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        img {
+            width: 132px;
+            height: 132px;
+        }
+
+        .info {
+            h3 {
+                font-size: 21px;
+                font-weight: 700px;
+                color: #363739;
+                margin-bottom: 17px;
+            }
+
+            p {
+                color: #363739;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.casings {
+    background-color: rgb(41, 41, 146);
+    padding-top: 116px;
+    padding-bottom: 108px;
+
+    .casings_continer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .casings_info {
+        width: 500px;
+
+        span {
+            color: #FFFFFF;
+            font-weight: 700px;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            width: 478px !important;
+            color: #FFFFFF;
+            font-size: 46px;
+            font-weight: 700px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-bottom: 64px;
+        }
+
+        .casings_galich {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-bottom: 17px;
+
+        }
+    }
+}
+
+h5 {
+    color: #FFFFFF;
+    font-weight: 700px;
+}
+
+.product_photo {
+    position: relative;
+
+    img {
+        position: absolute;
+    }
+
+    .first {
+        right: -40px;
+        top: -280px;
+    }
+
+    .secint {
+        right: -900px;
+        top: -430px;
+        z-index: -1px;
+    }
+
+    .last {
+        top: -280px;
+        right: -600px;
+        z-index: -1px;
+    }
+
+    .device {
+        position: absolute;
+        top: -230px;
+        right: -200px;
+        z-index: -1px;
+    }
+}
+
+.cover {
+    background-color: #FFFFFF;
+    margin-top: 135px !important;
+    margin-bottom: 137px;
+
+    .continer__cover {
+        display: flex;
+        align-items: center;
+        gap: 54px;
+
+        .imsge2 {
+            width: 475px;
+            position: relative;
+
+            img {
+                width: 386px;
+                height: 464px;
+            }
+
+            .w {
+               @extend %greeninfo
+            }
+            .w{
+                position: absolute;
+                top: 150px;
+                left: 280px;
+            }
+        }
+        
+    }
+}
+
+.imfolar{
+    span{
+        color: #3EA83B;
+        font-weight: 700px;
+        font-size: 19px;
+        margin-bottom: 28px;
+    }
+    h3{
+        font-weight: 700px;
+        font-size: 46px;
+        color: #363739;
+        margin-bottom: 57px;
+    }
+    .galick__infos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 10px;
+        p{
+            color: #363739;
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+}   

@@ -33,6 +33,12 @@
         .header_button{
             @extend %buttonbolim
         }
+        .header_button{
+            border: none;
+            :hover{
+                background-color: #195618;
+            }
+        }
        }
     }
 }
